@@ -7,6 +7,9 @@
     <title>20117 안진우</title>
     <link rel="stylesheet" href="app.css">
     <script src="app.js"></script>
+    <link rel="stylesheet" href="notiflix.css">
+    <script src="notiflix.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css">
 </head>
 
 <body>
@@ -45,7 +48,7 @@
         <div class="text">
             회원가입
         </div>
-        <form action="" class="form">
+        <form action="#" class="form">
             <div class="input_box">
                 <div class="input_text">
                     <p>이름</p>
@@ -64,7 +67,7 @@
                     <input type="password" required placeholder="비밀번호를 다시 입력해주세요." class="register_input_passc">
                 </div>
                 <div class="fail register_fail">
-                   이미 등록된 아이디 입니다.
+                    이미 등록된 아이디 입니다.
                 </div>
                 <button class="btn register_btn" type="button">회원가입</button>
                 <div class="login_move_btn">이미 아이디가 있으신가요?</div>
@@ -104,12 +107,66 @@
                 <input type="hidden" value="" class="register_pass">
                 <input type="hidden" value="" class="register_passc">
                 <div class="fail register_fail">
-                   이미 등록된 아이디 입니다.
+                    이미 등록된 아이디 입니다.
                 </div>
-                <button class="btn register_btn" type="submit">성적등록</button>
+                <button class="btn score_btn" type="submit">성적등록</button>
             </div>
         </form>
     </div>
+
+    <div class="main_page">
+        <header>
+            <div class="header_logo">
+                <span>학생관리 프로그램</span>
+            </div>
+            <div class="header_right_box">
+                <div class="header_input">
+                    <input type="text" placeholder="검색어를 입력해주세요">
+                    <span><i class="fas fa-search"></i></span>
+                </div>
+                <div class="user_profile">
+                    <p>안진우 <span>jinu0107</span></p>
+                </div>
+            </div>
+        </header>
+        <div class="header_sub">
+            <div class="tab">
+                <i class="fas fa-book-open"></i>
+                <p>성적 세분화</p>
+            </div>
+            <div class="tab">
+                <i class="fas fa-chart-line"></i>
+                <p>전체 학생</p>
+            </div>
+        </div>
+        <div class="main_tab">
+            <span>성적 세분화</span>
+            <div class="main_card_list">
+                <div class="main_card">
+                    <div class="card_text">
+                        <div>
+                            <i class="fas fa-calculator"></i><span>수학</span>
+                        </div>
+                        <div class="menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="score_box">
+                        <canvas></canvas>
+                    </div>
+                </div>
+                <div class="main_card">
+
+                </div>
+                <div class="main_card">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 </body>
 
