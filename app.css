@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@font-face {
+    src: url('NotoSansKR-Medium.otf');
+    font-family: "noto";
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "noto";
+}
+
+
+body {
+    background-color: #f4f5f9;
+}
+
+
+.login_popup {
+    background-color: #fff;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 1px 5px 10px 1px #0001;
+    margin: 150px auto;
+    padding: 20px;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_logo {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.main_logo > span {
+    color: #3ebbbf;
+    font-size: 32px;
+}
+
+.main_logo >span > span {
+    color: #00666a;
+}
+
+.main_logo > p {
+    color: #9ca7bd;
+    font-size: 16px;
+}
+
+.text {
+    width: 75%;
+    text-align: center;
+    font-size: 32px;
+    color: #404f62;
+    border-bottom: 2px solid #404f62;
+    padding-bottom: 5px;
+}
+
+.form {
+    margin-top: 30px;
+    width: 75%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.input_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input_text {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_text > p {
+    color: #404f62;
+    width: 48%;
+}
+
+
+.input_input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.input_input > input {
+    all: unset;
+    width: 45%;
+    height: 50px;
+    border: 2px solid #ecebf0;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.fail {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 13px;
+    color: #ff7c6d;
+}
+
+
+.btn {
+    all: unset;
+    background-color: #01b0b5;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 45%;
+    height: 60px;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+
+.register_move_btn {
+    font-size: 13px;
+    margin-top: 20px;
+    border-bottom: 1px solid #404f62;
+    color: #404f62;
+    cursor: pointer;
+}
+
+
+
+.register_popup {
+    background-color: #fff;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 1px 5px 10px 1px #0001;
+    margin: 150px auto;
+    padding: 20px;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register_btn {
+    margin-top: 60px;
+}
+
+
+.login_move_btn {
+    font-size: 13px;
+    margin-top: 20px;
+    border-bottom: 1px solid #404f62;
+    color: #404f62;
+    cursor: pointer;
+}
+
+
+.score_popup {
+    background-color: #fff;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 1px 5px 10px 1px #0001;
+    margin: 150px auto;
+    padding: 20px;
+    display: flex;
+    /* display: none; */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+

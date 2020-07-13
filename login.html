@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20117 안진우</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="login_popup">
+        <div class="main_logo">
+            <span>학생관리 <span>프로그램</span></span>
+            <p>깔끔한 디자인의 학생관리 프로그램 Ver.1.0</p>
+        </div>
+        <div class="text">
+            로그인
+        </div>
+        <form action="" class="form">
+            <div class="input_box">
+                <div class="input_text">
+                    <p>아이디</p>
+                    <p>비밀번호</p>
+                </div>
+                <div class="input_input">
+                    <input type="text" placeholder="아이디를 입력해주세요." class="login_input_id" required>
+                    <input type="password" placeholder="비밀번호를 입력해주세요." class="login_input_pass" required>
+                </div>
+                <div class="fail login_fail">
+                    아이디,또는 비밀번호가 잘못되었습니다.
+                </div>
+                <button class="btn login_btn" type="submit">로그인</button>
+                <div class="register_move_btn">처음이시면 회원가입을 해주세요.</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="register_popup">
+        <div class="main_logo">
+            <span>학생관리 <span>프로그램</span></span>
+            <p>깔끔한 디자인의 학생관리 프로그램 Ver.1.0</p>
+        </div>
+        <div class="text">
+            회원가입
+        </div>
+        <form action="" class="form">
+            <div class="input_box">
+                <div class="input_text">
+                    <p>이름</p>
+                    <p>아이디</p>
+                </div>
+                <div class="input_input">
+                    <input type="text" required placeholder="이름을 입력해주세요." class="register_input_name">
+                    <input type="text" required placeholder="아이디를 입력해주세요." class="register_input_id">
+                </div>
+                <div class="input_text">
+                    <p>비밀번호</p>
+                    <p>비밀번호 확인</p>
+                </div>
+                <div class="input_input">
+                    <input type="password" required placeholder="비밀번호를 입력해주세요." class="register_input_pass">
+                    <input type="password" required placeholder="비밀번호를 다시 입력해주세요." class="register_input_passc">
+                </div>
+                <div class="fail register_fail">
+                   이미 등록된 아이디 입니다.
+                </div>
+                <button class="btn register_btn" type="button">회원가입</button>
+                <div class="login_move_btn">이미 아이디가 있으신가요?</div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="score_popup">
+        <div class="main_logo">
+            <span>학생관리 <span>프로그램</span></span>
+            <p>깔끔한 디자인의 학생관리 프로그램 Ver.1.0</p>
+        </div>
+        <div class="text">
+            성적등록
+        </div>
+        <form action="" class="form">
+            <div class="input_box">
+                <div class="input_text">
+                    <p>국어</p>
+                    <p>수학</p>
+                </div>
+                <div class="input_input">
+                    <input type="text" required placeholder="국어성적을 입력해주세요." class="score_input_name">
+                    <input type="text" required placeholder="수학성적을 입력해주세요." class="score_input_id">
+                </div>
+                <div class="input_text">
+                    <p>사회</p>
+                    <p>과학</p>
+                </div>
+                <div class="input_input">
+                    <input type="password" required placeholder="사회성적을 입력해주세요." class="score_input_pass">
+                    <input type="password" required placeholder="과학성적을 다시 입력해주세요." class="score_passc">
+                </div>
+                <input type="hidden" value="" class="register_name">
+                <input type="hidden" value="" class="register_id">
+                <input type="hidden" value="" class="register_pass">
+                <input type="hidden" value="" class="register_passc">
+                <div class="fail register_fail">
+                   이미 등록된 아이디 입니다.
+                </div>
+                <button class="btn register_btn" type="submit">성적등록</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
