@@ -11,8 +11,7 @@ class App {
     constructor() {
         log("dsa");
         this.addEvent();
-        let cvs = document.querySelector("canvas");
-        this.drawCanvas(cvs, 100, 70);
+        this.drawcard();
     }
 
 
@@ -144,10 +143,82 @@ class App {
 
             document.querySelector(".register_popup").style.display = "none";
             document.querySelector(".score_popup").style.display = "flex";
+        });
 
+        document.querySelector(".tab_2").addEventListener("click" , ()=>{
+            document.querySelector(".main_tab").style.display = "none";
+            document.querySelector(".sub_tab").style.display = "block";
+        });
+
+        document.querySelector(".tab_1").addEventListener("click" , ()=>{
+            document.querySelector(".sub_tab").style.display = "none";
+            document.querySelector(".main_tab").style.display = "block";
         });
 
     }
+
+    drawcard() {
+        let math = 95;
+        let color = "";
+        if (math >= 80) {
+            color = "#42cf97"
+        }else if (math >= 40){
+            color = "#f79f24";
+        }else {
+            color = "#f76277";
+        }
+        
+        document.querySelector(".math_score").style.background = `conic-gradient(${color} ${math}%, #d4d4d4 0)`;
+        document.querySelector(".math_score_text > p").innerHTML = math + "<span>점</span>";
+        document.querySelector(".math_score_text").style.color = color;
+        let s = 91;
+        if (s >= 80) {
+            color = "#42cf97"
+        }else if (s >= 40){
+            color = "#f79f24";
+        }else {
+            color = "#f76277";
+        }
+        document.querySelector(".s_score").style.background = `conic-gradient(${color} ${s}%, #d4d4d4 0)`;
+        document.querySelector(".s_score_text > p").innerHTML = s + "<span>점</span>";
+        document.querySelector(".s_score_text").style.color = color;
+        let g = 100;
+        if (g >= 80) {
+            color = "#42cf97"
+        }else if (g >= 40){
+            color = "#f79f24";
+        }else {
+            color = "#f76277";
+        }
+
+        document.querySelector(".g_score").style.background = `conic-gradient(${color} ${g}%, #d4d4d4 0)`;
+        document.querySelector(".g_score_text > p").innerHTML = g + "<span>점</span>";
+        document.querySelector(".g_score_text").style.color = color;
+        let sc = 86;
+        if (sc >= 80) {
+            color = "#42cf97"
+        }else if (sc >= 40){
+            color = "#f79f24";
+        }else {
+            color = "#f76277";
+        }
+
+        document.querySelector(".sc_score").style.background = `conic-gradient(${color} ${sc}%, #d4d4d4 0)`;
+        document.querySelector(".sc_score_text > p").innerHTML = sc + "<span>점</span>";
+        document.querySelector(".sc_score_text").style.color = color;
+
+        let user_score = 32;
+        document.querySelector('.user_score > p').innerHTML = user_score + "<span>등</span>";
+
+        let user_cnt = 59;
+        document.querySelector(".user_cnt > p").innerHTML = user_cnt + "<span>명</span>";
+
+    }
+
+
+
+
+
 
     drawCanvas(canvas, total, current) {
         let ctx = canvas.getContext("2d");

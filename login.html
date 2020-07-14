@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>20117 안진우</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css">
+    
     <script src="app.js"></script>
     <link rel="stylesheet" href="notiflix.css">
     <script src="notiflix.js"></script>
     <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css">
+
 </head>
 
 <body>
@@ -130,11 +134,11 @@
             </div>
         </header>
         <div class="header_sub">
-            <div class="tab">
+            <div class="tab tab_1">
                 <i class="fas fa-book-open"></i>
                 <p>성적 세분화</p>
             </div>
-            <div class="tab">
+            <div class="tab tab_2">
                 <i class="fas fa-chart-line"></i>
                 <p>전체 학생</p>
             </div>
@@ -151,16 +155,151 @@
                             <i class="fas fa-ellipsis-v"></i>
                         </div>
                     </div>
-                    <div class="score_box">
-                        <canvas></canvas>
+                    <div class="score_box math_score">
+                        <div class="score_inner_box math_score_text">
+                            <p>70<span>점</span></p>
+                            <div class="score_text">
+                                내 점수
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="main_card">
-
+                    <div class="card_text">
+                        <div>
+                            <i class="fas fa-gavel"></i><span>사회</span>
+                        </div>
+                        <div class="menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="score_box s_score">
+                        <div class="score_inner_box s_score_text">
+                            <p>70<span>점</span></p>
+                            <div class="score_text">
+                                내 점수
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main_card">
-
+                    <div class="card_text">
+                        <div>
+                            <i class="fas fa-book"></i><span>국어</span>
+                        </div>
+                        <div class="menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="score_box g_score">
+                        <div class="score_inner_box g_score_text">
+                            <p>70<span>점</span></p>
+                            <div class="score_text">
+                                내 점수
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="main_card_list">
+                <div class="main_card">
+                    <div class="card_text">
+                        <div>
+                            <i class="fas fa-flask"></i><span>과학</span>
+                        </div>
+                        <div class="menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="score_box sc_score">
+                        <div class="score_inner_box sc_score_text">
+                            <p>70<span>점</span></p>
+                            <div class="score_text">
+                                내 점수
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_card">
+                    <div class="card_text">
+                        <div>
+                            <i class="fas fa-medal"></i></i><span>당신의 등수</span>
+                        </div>
+                        <div class="menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="user_score">
+                        <p>36<span>등</span></p>
+                    </div>
+                </div>
+                <div class="main_card">
+                    <div class="card_text">
+                        <div>
+                            <i class="fas fa-users"></i><span>전체 유저수</span>
+                        </div>
+                        <div class="menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="user_cnt">
+                        <p>50<span>명</span></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="sub_tab">
+            <span>전체 학생</span>
+            <div class="user_list_box">
+                <span>전체 학생 목록</span>
+                <table class="table">
+                    <thead class="t_header">
+                        <tr>
+                            <th scope="col">학생 이름</th>
+                            <th scope="col">학생아이디</th>
+                            <th scope="col">수학</th>
+                            <th scope="col">사회</th>
+                            <th scope="col">국어</th>
+                            <th scope="col">과학</th>
+                            <th scope="col">평균</th>
+                            <th scope="col">등수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>안진우</td>
+                            <td>jinu0107</td>
+                            <td>56</td>
+                            <td>82</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>42.5</td>
+                            <td>32등</td>
+                        </tr>
+                        <tr>
+                            <td>안진우</td>
+                            <td>jinu0107</td>
+                            <td>56</td>
+                            <td>82</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>42.5</td>
+                            <td>32등</td>
+                        </tr>
+                        <tr>
+                            <td>안진우</td>
+                            <td>jinu0107</td>
+                            <td>56</td>
+                            <td>82</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>42.5</td>
+                            <td>32등</td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
